@@ -61,12 +61,11 @@ public class Role implements Serializable {
         
         private java.lang.String normalizedName = "";
 
-
     /**
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Application application;
 
@@ -172,7 +171,6 @@ public class Role implements Serializable {
         this.normalizedName = normalizedName;
         return this;
     }
-
     /**
     * Obtém application
     * return application

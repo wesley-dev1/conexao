@@ -37,7 +37,7 @@ public class View implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="securable_id", nullable = false, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="securable_id", nullable = false, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Securable securable;
 
@@ -108,10 +108,9 @@ public class View implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Application application;
-
 
     /**
     * Construtor
@@ -329,7 +328,6 @@ public class View implements Serializable {
         this.traceMethodAllowed = traceMethodAllowed;
         return this;
     }
-
     /**
     * Obtém application
     * return application

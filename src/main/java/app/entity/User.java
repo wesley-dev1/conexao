@@ -150,7 +150,7 @@ public class User implements Serializable {
     * @generated
     */
     @Column(name = "picture", nullable = true, unique = false, length=255, insertable=true, updatable=true)
-
+        
         private byte[] picture;
 
     /**

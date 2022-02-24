@@ -44,7 +44,7 @@ public class Securable implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Application application;
 
@@ -93,7 +93,6 @@ public class Securable implements Serializable {
         this.name = name;
         return this;
     }
-
     /**
     * Obtém application
     * return application

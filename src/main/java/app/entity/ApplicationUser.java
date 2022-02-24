@@ -37,7 +37,7 @@ public class ApplicationUser implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = "", foreignKeyDefinition = "FOREIGN KEY (application_id) REFERENCES APPLICATION (id)"))
+    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private Application application;
 
@@ -45,7 +45,7 @@ public class ApplicationUser implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="user_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = "", foreignKeyDefinition = "FOREIGN KEY (user_id) REFERENCES USER (id)"))
+    @JoinColumn(name="user_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private User user;
 

@@ -1,11 +1,12 @@
 {
   "cells": [
     {
+      "allowConfiguration": true,
       "angle": 0,
       "apiPath": "src/main/webapp/raml/app/api.raml",
       "attrs": {},
       "chkApi": false,
-      "dataSource": "jdbc/main",
+      "dataSource": "jdbc/Conexao21",
       "disableCache": false,
       "id": "paperCell",
       "namespace": "app",

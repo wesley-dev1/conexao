@@ -36,7 +36,7 @@ public class Application implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "name", nullable = false, unique = false, insertable=true, updatable=true)
+    @Column(name = "name", nullable = true, unique = false, insertable=true, updatable=true)
         
         private java.lang.String name;
 
