@@ -21,4 +21,25 @@
             <property name="cronapp.diagram.namespace" value="app"/>
         </properties>
     </persistence-unit>
+    <persistence-unit name="appa" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>appa.entity.AuditLog</class>
+        <class>appa.entity.Application</class>
+        <class>appa.entity.Role</class>
+        <class>appa.entity.View</class>
+        <class>appa.entity.Securable</class>
+        <class>appa.entity.RoleSecurable</class>
+        <class>appa.entity.ApplicationUser</class>
+        <class>appa.entity.User</class>
+        <class>appa.entity.UserRole</class>
+        <class>appa.entity.UserSecurable</class>
+        <class>appa.entity.Login</class>
+        <class>appa.entity.Device</class>
+        <properties>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+            <property name="eclipselink.metadata-source" value="cronapp.framework.CronappMetadataSource"/>
+            <property name="cronapp.diagram.namespace" value="appa"/>
+        </properties>
+    </persistence-unit>
 </persistence>

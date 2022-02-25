@@ -34,6 +34,7 @@
     "blocklyParams": [
       {
         "name": "banco",
+        "value": "connection",
         "type": "CUSTOM"
       }
     ]

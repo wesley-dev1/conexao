@@ -21,7 +21,7 @@ import cronapp.framework.boot.CronappInitializer;
 	"reports",
 	"cronapi",
 	"blockly",
-"app"
+"appa"
 })
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class })
 public class SpringBootMain extends CronappInitializer {

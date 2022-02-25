@@ -36,7 +36,7 @@ public static Var Executar(@ParamMetaData(description = "param_banco") Var param
     System.out.println(banco.getObjectAsString());
 
     if (
-    Var.VAR_FALSE.getObjectAsBoolean()) {
+    Var.VAR_TRUE.getObjectAsBoolean()) {
 
         banco =
         cronapi.database.Operations.configureConnection(

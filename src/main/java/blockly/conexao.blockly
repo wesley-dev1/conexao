@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JAVA" ruleDescription="conexao" ruleName="conexao" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="384.4999999999999" scrolly="-34.80000000000007" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="384.4999999999999" scrolly="38.5" target="Anb:u5+^,0vLkL9QIqn5"/>
   <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-292" y="-7">
     <mutation>
       <arg name="banco"/>
@@ -38,7 +38,7 @@
                     <mutation else="1"/>
                     <value name="IF0">
                       <block asynccall="false" colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="8]JL]/BF}}[~.e+!-d9B" origintype="logic_boolean" output="true" tooltip="Retorna verdadeiro ou falso." type="logic_boolean">
-                        <field customattributes="" name="BOOL">FALSE</field>
+                        <field customattributes="" name="BOOL">TRUE</field>
                       </block>
                     </value>
                     <statement name="DO0">
