@@ -1,0 +1,41 @@
+{
+  "onSystemStarts": null,
+  "onLogout": null,
+  "onLogin": null,
+  "onSessionCreate": null,
+  "onSessionDestroy": null,
+  "afterPageRender": null,
+  "afterLoginRender": null,
+  "afterHomeRender": null,
+  "onAuthenticate": null,
+  "onGetRoles": null,
+  "onGetUserSecurables": null,
+  "onGetSecurableViews": null,
+  "onGetRoleSecurables": null,
+  "onChangePassword": null,
+  "onConfigureConnection": {
+    "type": "server",
+    "blockly": {
+      "namespace": "blockly.Conexao",
+      "sourcePath": "src/main/java/blockly/conexao.blockly",
+      "language": "java",
+      "methods": [
+        {
+          "name": "Executar",
+          "hasReturn": "true",
+          "params": [
+            "banco"
+          ]
+        }
+      ]
+    },
+    "blocklyMethod": "Executar",
+    "blocklyClass": "blockly.Conexao",
+    "blocklyParams": [
+      {
+        "name": "banco",
+        "type": "CUSTOM"
+      }
+    ]
+  }
+}

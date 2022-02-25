@@ -36,14 +36,20 @@ public static Var Executar(@ParamMetaData(description = "param_banco") Var param
     System.out.println(banco.getObjectAsString());
 
     if (
-    Var.valueOf(
-    cronapi.util.Operations.getCurrentUserName().equals(
-    Var.valueOf("admin"))).getObjectAsBoolean()) {
+    Var.VAR_FALSE.getObjectAsBoolean()) {
 
         banco =
         cronapi.database.Operations.configureConnection(
         Var.valueOf("com.mysql.jdbc.Driver"),
         Var.valueOf("jdbc:mysql://rds-oncronos-shared.cx8gelec2ybx.us-east-1.rds.amazonaws.com:3306/IBase64?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC&useSSL=false"),
+        Var.valueOf("usr_db_doc"),
+        Var.valueOf("rjfe2Vm9yQWg3R8Y"));
+    } else {
+
+        banco =
+        cronapi.database.Operations.configureConnection(
+        Var.valueOf("com.mysql.jdbc.Driver"),
+        Var.valueOf("jdbc:mysql://rds-oncronos-shared.cx8gelec2ybx.us-east-1.rds.amazonaws.com:3306/doc?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC&useSSL=false"),
         Var.valueOf("usr_db_doc"),
         Var.valueOf("rjfe2Vm9yQWg3R8Y"));
     }
